@@ -1,11 +1,21 @@
 body {
   font-family: 'Poppins', sans-serif;
-  background-image: url(https://images.unsplash.com/photo-1534371020656-6b85825f2b1a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cm9tYW5pYXxlbnwwfHwwfHw%3D&w=1000&q=80)
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-image:  url(../Survey-Form/photos/peakpx.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
-#survey-form {
-  background: rgba(0, 50, 180, 0.4));
+form {
+  background: rgba(22, 168, 95, 0.4));
   padding: 2.5rem 0.625rem;
   border-radius: 0.25rem;
+  box-sizing: border-box;
 }
 h1 {
   font-weight: 400;
