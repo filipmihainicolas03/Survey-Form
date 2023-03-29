@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey Form</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title">Survey Form about visiting Romania</h1>
+      <p id="description">Thank you for taking the time to anwser these questions</p>
+      <form id="survey-form">
+        <label id="name-label" for="name">Name</label>
+          <input 
+            name="name" 
+            id="name" 
+            type="text" 
+            placeholder="Enter your name"
+            required
+          />
+        <label id="email-label" for="email">Email</label>
+          <input 
+            name="email" 
+            id="email" 
+            type="email"
+            placeholder="Enter your email" 
+            required
+          />
+        <label id="number-label" for="name">Name</label>
+          <input
+            name="age"
+            id="number"
+            type="number"
+            placeholder="Age"
+            min="10"
+            max="99"
+            required
+          />
+        <p id="choose-option">Which option best describes your experience in Romania?</p>
+          <select id="dropdown" name="option" required>
+              <option disabled selected value>Select your experience</option>
+              <option value="teriffic">Teriffic</option>
+              <option value="verygood"> Very Good</option>
+              <option value="notgood">Not so good</option>
+              <option value="bad">Bad</option>
+              <option value="preferNo">Prefer not to say</option>
+          </select>
+
+        <p id="recommend-to">Would you recommend for other people to visit this country?</p>
+          <label>
+              <input
+                name="user-recommend"
+                value="definitely"
+                type="radio"
+                checked
+              />Definitely</label
+            >
+            <label>
+              <input
+                name="user-recommend"
+                value="maybe"
+                type="radio"
+              />Maybe</label
+              >
+            <label
+              ><input
+                name="user-recommend"
+                value="not-sure"
+                type="radio"
+              />Not sure</label
+              >
+        <p id="places">What was your favorite places to visit?</p>
+          <select id="select-places" name="selectPlaces"required>
+              <option disabled selected value>Select an option</option>
+              <option value="blackSea">Black Sea</option>
+              <option value="carpathianMountains">Carpathian Mountains</option>
+              <option value="danubeDelta">Danube Delta</option>
+              <option value="citiesVilagges">Cities and vilagges</option>
+              <option value="other-place">Other</option>
+            </select>
+        <p>What would you like to be improved on your next visites in Romania?</p> 
+            <label
+              ><input
+                name="prefer"
+                value="better-infrastructure"
+                type="checkbox"
+              />Better infrastructure</label
+            >
+            <label>
+              <input
+                name="prefer"
+                value="tourist-attractions"
+                type="checkbox"
+              />Better promotion of tourist attractions</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="events-circuits"
+                type="checkbox"
+                class="input-checkbox"
+              />Better organization of events and tourist circuits</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="challenges"
+                type="checkbox"
+                
+              />Other</label
+            >
+          <p>If you choose "Other" in the previous question, please enter your answer here</p>
+            <textarea
+              id="comments"
+              name="comment"
+              placeholder="Enter your answer here..."
+            ></textarea>
+
+            <button type="submit" id="submit">Submit</button>
+          
+      </form>
+    
+    </div>
+  </body>
+</html>
