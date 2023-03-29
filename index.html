@@ -9,7 +9,7 @@
     <div class="container">
       <header class="header">
         <h1 id="title" class="text-center">Survey Form about visiting Romania</h1>
-        <p class="description" id="description">Thank you for taking the time to anwser these questions</p>
+        <p class="description text-center" id="description">Thank you for taking the time to anwser these questions</p>
       </header>
       <form id="survey-form">
         <div class="form-group">
@@ -17,7 +17,8 @@
             <input 
               name="name" 
               id="name" 
-              type="text" 
+              type="text"
+              class="form-control" 
               placeholder="Enter your name"
               required
             />
@@ -28,6 +29,7 @@
               name="email" 
               id="email" 
               type="email"
+              class="form-control"
               placeholder="Enter your email" 
               required
             />
@@ -38,6 +40,7 @@
               name="age"
               id="number"
               type="number"
+              class="form-control"
               placeholder="Age"
               min="10"
               max="99"
@@ -46,7 +49,7 @@
         </div>
         <div class="form-group">
           <p id="choose-option">Which option best describes your experience in Romania?</p>
-            <select id="dropdown" name="option" required>
+            <select id="dropdown" name="option" class="form-control" required>
                 <option disabled selected value>Select your experience</option>
                 <option value="teriffic">Teriffic</option>
                 <option value="verygood"> Very Good</option>
@@ -62,6 +65,7 @@
                   name="user-recommend"
                   value="definitely"
                   type="radio"
+                  class="input-radio"
                   checked
                 />Definitely</label
               >
@@ -70,6 +74,7 @@
                   name="user-recommend"
                   value="maybe"
                   type="radio"
+                  class="input-radio"
                 />Maybe</label
                 >
               <label
@@ -77,12 +82,13 @@
                   name="user-recommend"
                   value="not-sure"
                   type="radio"
+                  class="input-radio"
                 />Not sure</label
                 >
         </div>
         <div class="form-group">
           <p id="places">What was your favorite places to visit?</p>
-            <select id="select-places" name="selectPlaces"required>
+            <select id="select-places" name="selectPlaces"class="form-control" required>
                 <option disabled selected value>Select an option</option>
                 <option value="blackSea">Black Sea</option>
                 <option value="carpathianMountains">Carpathian Mountains</option>
@@ -92,12 +98,15 @@
               </select>
         </div>
         <div class="form-group">
-        <p>What would you like to be improved on your next visites in Romania?</p> 
+          <p>What would you like to be improved on your next visites in Romania?
+            <span class="clue">(Check all that apply)</span>
+          </p> 
             <label
               ><input
                 name="prefer"
                 value="better-infrastructure"
                 type="checkbox"
+                class="input-checkbox"
               />Better infrastructure</label
             >
             <label>
@@ -105,6 +114,7 @@
                 name="prefer"
                 value="tourist-attractions"
                 type="checkbox"
+                class="input-checkbox"
               />Better promotion of tourist attractions</label
             >
             <label
@@ -120,20 +130,21 @@
                 name="prefer"
                 value="challenges"
                 type="checkbox"
-                
+                class="input-checkbox"
               />Other</label
             >
           </div>
           <div class="form-group">
-          <p>If you choose "Other" in the previous question, please enter your answer here</p>
-            <textarea
-              id="comments"
-              name="comment"
-              placeholder="Enter your answer here..."
-            ></textarea>
+            <p>If you choose "Other" in the previous question, please enter your answer here</p>
+              <textarea
+                id="comments"
+                name="comment"
+                placeholder="Enter your answer here..."
+                class="input-textarea"
+              ></textarea>
           </div>
           <div class="form-group">
-            <button type="submit" id="submit">Submit</button>
+            <button type="submit" id="submit" class="submit-button">Submit</button>
           </div>
       </form>
     
