@@ -7,77 +7,91 @@
   </head>
   <body>
     <div class="container">
-      <h1 id="title">Survey Form about visiting Romania</h1>
-      <p id="description">Thank you for taking the time to anwser these questions</p>
+      <header class="header">
+        <h1 id="title" class="text-center">Survey Form about visiting Romania</h1>
+        <p class="description" id="description">Thank you for taking the time to anwser these questions</p>
+      </header>
       <form id="survey-form">
-        <label id="name-label" for="name">Name</label>
-          <input 
-            name="name" 
-            id="name" 
-            type="text" 
-            placeholder="Enter your name"
-            required
-          />
-        <label id="email-label" for="email">Email</label>
-          <input 
-            name="email" 
-            id="email" 
-            type="email"
-            placeholder="Enter your email" 
-            required
-          />
-        <label id="number-label" for="name">Name</label>
-          <input
-            name="age"
-            id="number"
-            type="number"
-            placeholder="Age"
-            min="10"
-            max="99"
-            required
-          />
-        <p id="choose-option">Which option best describes your experience in Romania?</p>
-          <select id="dropdown" name="option" required>
-              <option disabled selected value>Select your experience</option>
-              <option value="teriffic">Teriffic</option>
-              <option value="verygood"> Very Good</option>
-              <option value="notgood">Not so good</option>
-              <option value="bad">Bad</option>
-              <option value="preferNo">Prefer not to say</option>
-          </select>
-
-        <p id="recommend-to">Would you recommend for other people to visit this country?</p>
-          <label>
-              <input
-                name="user-recommend"
-                value="definitely"
-                type="radio"
-                checked
-              />Definitely</label
-            >
-            <label>
-              <input
-                name="user-recommend"
-                value="maybe"
-                type="radio"
-              />Maybe</label
-              >
-            <label
-              ><input
-                name="user-recommend"
-                value="not-sure"
-                type="radio"
-              />Not sure</label
-              >
-        <p id="places">What was your favorite places to visit?</p>
-          <select id="select-places" name="selectPlaces"required>
-              <option disabled selected value>Select an option</option>
-              <option value="blackSea">Black Sea</option>
-              <option value="carpathianMountains">Carpathian Mountains</option>
-              <option value="danubeDelta">Danube Delta</option>
-              <option value="citiesVilagges">Cities and vilagges</option>
-              <option value="other-place">Other</option>
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+            <input 
+              name="name" 
+              id="name" 
+              type="text" 
+              placeholder="Enter your name"
+              required
+            />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+            <input 
+              name="email" 
+              id="email" 
+              type="email"
+              placeholder="Enter your email" 
+              required
+            />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="name">Name</label>
+            <input
+              name="age"
+              id="number"
+              type="number"
+              placeholder="Age"
+              min="10"
+              max="99"
+              required
+            />
+        </div>
+        <div class="form-group">
+          <p id="choose-option">Which option best describes your experience in Romania?</p>
+            <select id="dropdown" name="option" required>
+                <option disabled selected value>Select your experience</option>
+                <option value="teriffic">Teriffic</option>
+                <option value="verygood"> Very Good</option>
+                <option value="notgood">Not so good</option>
+                <option value="bad">Bad</option>
+                <option value="preferNo">Prefer not to say</option>
             </select>
+        </div>
+        <div class="form-group">
+          <p id="recommend-to">Would you recommend for other people to visit this country?</p>
+            <label>
+                <input
+                  name="user-recommend"
+                  value="definitely"
+                  type="radio"
+                  checked
+                />Definitely</label
+              >
+              <label>
+                <input
+                  name="user-recommend"
+                  value="maybe"
+                  type="radio"
+                />Maybe</label
+                >
+              <label
+                ><input
+                  name="user-recommend"
+                  value="not-sure"
+                  type="radio"
+                />Not sure</label
+                >
+        </div>
+        <div class="form-group">
+          <p id="places">What was your favorite places to visit?</p>
+            <select id="select-places" name="selectPlaces"required>
+                <option disabled selected value>Select an option</option>
+                <option value="blackSea">Black Sea</option>
+                <option value="carpathianMountains">Carpathian Mountains</option>
+                <option value="danubeDelta">Danube Delta</option>
+                <option value="citiesVilagges">Cities and vilagges</option>
+                <option value="other-place">Other</option>
+              </select>
+        </div>
+        <div class="form-group">
         <p>What would you like to be improved on your next visites in Romania?</p> 
             <label
               ><input
@@ -109,15 +123,18 @@
                 
               />Other</label
             >
+          </div>
+          <div class="form-group">
           <p>If you choose "Other" in the previous question, please enter your answer here</p>
             <textarea
               id="comments"
               name="comment"
               placeholder="Enter your answer here..."
             ></textarea>
-
+          </div>
+          <div class="form-group">
             <button type="submit" id="submit">Submit</button>
-          
+          </div>
       </form>
     
     </div>
